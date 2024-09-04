@@ -1,11 +1,18 @@
-import LoginForm from "@/components/LoginForm";
+import Link from "next/link";
 
+export default function Landing() {
+    return (
+        <>
+            <div>Landing Page</div>
+            <div className="flex flex-col justify-center items-center p-8">
+                <Link className="text-3xl underline" href="/products">
+                    All Products
+                </Link>
 
-export default function Home() {
-  return (
-    <div className="flex flex-col justify-center items-center m-4">
-      <h1 className="text-3xl my-3">Hey, time to Sign In</h1>
-      <LoginForm />
-    </div>
-  );
+                <Link className="text-3xl underline" href="/users">
+                    All Users
+                </Link>
+            </div>
+        </>
+    );
 }
