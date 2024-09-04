@@ -27,4 +27,4 @@ export async function doCredentialLogin(formData) {
   } catch (err) {
     throw err;
   }
-}
+};
